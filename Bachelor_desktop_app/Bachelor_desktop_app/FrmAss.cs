@@ -17,7 +17,7 @@ namespace Bachelor_desktop_app
         //SQL connection
         MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=logintest");
 
-        public enum Classes {c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10};
+        public enum Classes { c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 };
         public Classes myClass;
 
         public FrmAss(String CU)
@@ -31,7 +31,6 @@ namespace Bachelor_desktop_app
             reader.Read();
 
             CheckClass(reader["Klasse"]);
-            MatBtn.Hide();
 
         }
 
@@ -42,57 +41,53 @@ namespace Bachelor_desktop_app
                 case 0:
                     AssLbl.Text = "Opgaver for 0. Klasse";
                     myClass = Classes.c0;
-                    MatBtn.Show();
+                    PhysBtn.Hide();
                     break;
                 case 1:
                     AssLbl.Text = "Opgaver for 1. Klasse";
                     myClass = Classes.c1;
-                    MatBtn.Show();
+                    PhysBtn.Hide();
                     break;
                 case 2:
                     AssLbl.Text = "Opgaver for 2. Klasse";
                     myClass = Classes.c2;
-                    MatBtn.Show();
+                    PhysBtn.Hide();
                     break;
                 case 3:
                     AssLbl.Text = "Opgaver for 3. Klasse";
                     myClass = Classes.c3;
-                    MatBtn.Show();
+                    PhysBtn.Hide();
                     break;
                 case 4:
                     AssLbl.Text = "Opgaver for 4. Klasse";
                     myClass = Classes.c4;
-                    MatBtn.Show();
+                    PhysBtn.Hide();
                     break;
                 case 5:
                     AssLbl.Text = "Opgaver for 5. Klasse";
                     myClass = Classes.c5;
-                    MatBtn.Show();
+                    PhysBtn.Hide();
                     break;
                 case 6:
                     AssLbl.Text = "Opgaver for 6. Klasse";
                     myClass = Classes.c6;
-                    MatBtn.Show();
+                    PhysBtn.Hide();
                     break;
                 case 7:
                     AssLbl.Text = "Opgaver for 7. Klasse";
                     myClass = Classes.c7;
-                    MatBtn.Show();
                     break;
                 case 8:
                     AssLbl.Text = "Opgaver for 8. Klasse";
                     myClass = Classes.c8;
-                    MatBtn.Show();
                     break;
                 case 9:
                     AssLbl.Text = "Opgaver for 9. Klasse";
                     myClass = Classes.c9;
-                    MatBtn.Show();
                     break;
                 case 10:
                     AssLbl.Text = "Opgaver for 10. Klasse";
                     myClass = Classes.c10;
-                    MatBtn.Show();
                     break;
 
                 default:
@@ -107,37 +102,103 @@ namespace Bachelor_desktop_app
             switch (myClass)
             {
                 case Classes.c0:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 0. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 0. klasse";
                     break;
                 case Classes.c1:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 1. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 1. klasse";
                     break;
                 case Classes.c2:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 2. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 2. klasse";
                     break;
                 case Classes.c3:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 3. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 3. klasse";
                     break;
                 case Classes.c4:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 4. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 4. klasse";
                     break;
                 case Classes.c5:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 5. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 5. klasse";
                     break;
                 case Classes.c6:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 6. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 6. klasse";
                     break;
                 case Classes.c7:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 7. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 7. klasse";
                     break;
                 case Classes.c8:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 8. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 8. klasse";
                     break;
                 case Classes.c9:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 9. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 9. klasse";
                     break;
                 case Classes.c10:
-                    AssLbl.Text = "Du trykkede på knappen til matematik for 10. klasse";
+                    AssLbl.Text = "Du trykkede på knappen til Matematik for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void PhysBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Fysik for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Fysik for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Fysik for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Fysik for 10. klasse";
+                    break;
+
+                default:
+                    break;
+
+            }
+        }
+
+        private void DKBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c0:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 0. klasse";
+                    break;
+                case Classes.c1:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 1. klasse";
+                    break;
+                case Classes.c2:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 2. klasse";
+                    break;
+                case Classes.c3:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 3. klasse";
+                    break;
+                case Classes.c4:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 4. klasse";
+                    break;
+                case Classes.c5:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 5. klasse";
+                    break;
+                case Classes.c6:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 6. klasse";
+                    break;
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Dansk for 10. klasse";
                     break;
 
                 default:
