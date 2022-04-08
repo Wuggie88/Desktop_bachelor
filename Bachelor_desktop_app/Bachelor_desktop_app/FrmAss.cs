@@ -42,56 +42,97 @@ namespace Bachelor_desktop_app
                     AssLbl.Text = "Opgaver for 0. Klasse";
                     myClass = Classes.c0;
                     PhysBtn.Hide();
+                    EngBtn.Hide();
+                    JesusBtn.Hide();
+                    HisBtn.Hide();
+                    BioBtn.Hide();
+                    GeoBtn.Hide();
+                    SamfBtn.Hide();
+                    FRBtn.Hide();
+                    GerBtn.Hide();
+                    NatBtn.Hide();
                     break;
                 case 1:
                     AssLbl.Text = "Opgaver for 1. Klasse";
                     myClass = Classes.c1;
                     PhysBtn.Hide();
+                    HisBtn.Hide();
+                    BioBtn.Hide();
+                    GeoBtn.Hide();
+                    SamfBtn.Hide();
+                    FRBtn.Hide();
+                    GerBtn.Hide();
                     break;
                 case 2:
                     AssLbl.Text = "Opgaver for 2. Klasse";
                     myClass = Classes.c2;
                     PhysBtn.Hide();
+                    HisBtn.Hide();
+                    BioBtn.Hide();
+                    GeoBtn.Hide();
+                    SamfBtn.Hide();
+                    GerBtn.Hide();
+                    FRBtn.Hide();
                     break;
                 case 3:
                     AssLbl.Text = "Opgaver for 3. Klasse";
                     myClass = Classes.c3;
                     PhysBtn.Hide();
+                    BioBtn.Hide();
+                    GeoBtn.Hide();
+                    SamfBtn.Hide();
+                    FRBtn.Hide();
+                    GerBtn.Hide();
                     break;
                 case 4:
                     AssLbl.Text = "Opgaver for 4. Klasse";
                     myClass = Classes.c4;
                     PhysBtn.Hide();
+                    BioBtn.Hide();
+                    GeoBtn.Hide();
+                    SamfBtn.Hide();
+                    FRBtn.Hide();
+                    GerBtn.Hide();
                     break;
                 case 5:
                     AssLbl.Text = "Opgaver for 5. Klasse";
                     myClass = Classes.c5;
                     PhysBtn.Hide();
+                    BioBtn.Hide();
+                    GeoBtn.Hide();
+                    SamfBtn.Hide();
                     break;
                 case 6:
                     AssLbl.Text = "Opgaver for 6. Klasse";
                     myClass = Classes.c6;
                     PhysBtn.Hide();
+                    BioBtn.Hide();
+                    GeoBtn.Hide();
+                    SamfBtn.Hide();
                     break;
                 case 7:
                     AssLbl.Text = "Opgaver for 7. Klasse";
                     myClass = Classes.c7;
+                    SamfBtn.Hide();
+                    NatBtn.Hide();
                     break;
                 case 8:
                     AssLbl.Text = "Opgaver for 8. Klasse";
                     myClass = Classes.c8;
+                    NatBtn.Hide();
                     break;
                 case 9:
                     AssLbl.Text = "Opgaver for 9. Klasse";
                     myClass = Classes.c9;
+                    NatBtn.Hide();
                     break;
                 case 10:
                     AssLbl.Text = "Opgaver for 10. Klasse";
                     myClass = Classes.c10;
+                    NatBtn.Hide();
                     break;
 
                 default:
-                    AssLbl.Text = "This didn't work";
                     break;
 
             }
@@ -201,6 +242,266 @@ namespace Bachelor_desktop_app
                     AssLbl.Text = "Du trykkede på knappen til Dansk for 10. klasse";
                     break;
 
+                default:
+                    break;
+            }
+        }
+
+        private void EngBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c1:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 1. klasse";
+                    break;
+                case Classes.c2:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 2. klasse";
+                    break;
+                case Classes.c3:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 3. klasse";
+                    break;
+                case Classes.c4:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 4. klasse";
+                    break;
+                case Classes.c5:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 5. klasse";
+                    break;
+                case Classes.c6:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 6. klasse";
+                    break;
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Engelsk for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void JesusBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c1:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 1. klasse";
+                    break;
+                case Classes.c2:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 2. klasse";
+                    break;
+                case Classes.c3:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 3. klasse";
+                    break;
+                case Classes.c4:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 4. klasse";
+                    break;
+                case Classes.c5:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 5. klasse";
+                    break;
+                case Classes.c6:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 6. klasse";
+                    break;
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Kristendom for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void HisBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c3:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 3. klasse";
+                    break;
+                case Classes.c4:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 4. klasse";
+                    break;
+                case Classes.c5:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 5. klasse";
+                    break;
+                case Classes.c6:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 6. klasse";
+                    break;
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Historie for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void BioBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Biologi for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Biologi for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Biologi for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Biologi for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void GeoBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Geografi for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Geografi for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Geografi for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Geografi for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void SamfBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Samfundsfag for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Samfundsfag for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Samfundsfag for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void FRBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c5:
+                    AssLbl.Text = "Du trykkede på knappen til Fransk for 5. klasse";
+                    break;
+                case Classes.c6:
+                    AssLbl.Text = "Du trykkede på knappen til Fransk for 6. klasse";
+                    break;
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Fransk for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Fransk for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Fransk for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Fransk for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void GerBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c5:
+                    AssLbl.Text = "Du trykkede på knappen til Tysk for 5. klasse";
+                    break;
+                case Classes.c6:
+                    AssLbl.Text = "Du trykkede på knappen til Tysk for 6. klasse";
+                    break;
+                case Classes.c7:
+                    AssLbl.Text = "Du trykkede på knappen til Tysk for 7. klasse";
+                    break;
+                case Classes.c8:
+                    AssLbl.Text = "Du trykkede på knappen til Tysk for 8. klasse";
+                    break;
+                case Classes.c9:
+                    AssLbl.Text = "Du trykkede på knappen til Tysk for 9. klasse";
+                    break;
+                case Classes.c10:
+                    AssLbl.Text = "Du trykkede på knappen til Tysk for 10. klasse";
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void NatBtn_Click(object sender, EventArgs e)
+        {
+            switch (myClass)
+            {
+                case Classes.c1:
+                    AssLbl.Text = "Du trykkede på knappen til Natur/Teknik for 1. klasse";
+                    break;
+                case Classes.c2:
+                    AssLbl.Text = "Du trykkede på knappen til Natur/Teknik for 2. klasse";
+                    break;
+                case Classes.c3:
+                    AssLbl.Text = "Du trykkede på knappen til Natur/Teknik for 3. klasse";
+                    break;
+                case Classes.c4:
+                    AssLbl.Text = "Du trykkede på knappen til Natur/Teknik for 4. klasse";
+                    break;
+                case Classes.c5:
+                    AssLbl.Text = "Du trykkede på knappen til Natur/Teknik for 5. klasse";
+                    break;
+                case Classes.c6:
+                    AssLbl.Text = "Du trykkede på knappen til Natur/Teknik for 6. klasse";
+                    break;
                 default:
                     break;
             }

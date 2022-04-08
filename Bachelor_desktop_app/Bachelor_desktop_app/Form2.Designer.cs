@@ -64,9 +64,8 @@
             this.pnlNav.Controls.Add(this.panel2);
             this.pnlNav.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlNav.Location = new System.Drawing.Point(0, 0);
-            this.pnlNav.Margin = new System.Windows.Forms.Padding(4);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(248, 762);
+            this.pnlNav.Size = new System.Drawing.Size(186, 619);
             this.pnlNav.TabIndex = 2;
             // 
             // OptionBtn
@@ -76,10 +75,9 @@
             this.OptionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OptionBtn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OptionBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.OptionBtn.Location = new System.Drawing.Point(0, 678);
-            this.OptionBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.OptionBtn.Location = new System.Drawing.Point(0, 550);
             this.OptionBtn.Name = "OptionBtn";
-            this.OptionBtn.Size = new System.Drawing.Size(248, 28);
+            this.OptionBtn.Size = new System.Drawing.Size(186, 23);
             this.OptionBtn.TabIndex = 7;
             this.OptionBtn.Text = "Indstillinger";
             this.OptionBtn.UseVisualStyleBackColor = true;
@@ -92,10 +90,10 @@
             this.HWBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HWBtn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HWBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.HWBtn.Location = new System.Drawing.Point(0, 261);
-            this.HWBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.HWBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.HWBtn.Location = new System.Drawing.Point(0, 213);
             this.HWBtn.Name = "HWBtn";
-            this.HWBtn.Size = new System.Drawing.Size(248, 28);
+            this.HWBtn.Size = new System.Drawing.Size(186, 23);
             this.HWBtn.TabIndex = 6;
             this.HWBtn.Text = "Lektier";
             this.HWBtn.UseVisualStyleBackColor = true;
@@ -108,10 +106,9 @@
             this.MsgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MsgBtn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MsgBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.MsgBtn.Location = new System.Drawing.Point(0, 233);
-            this.MsgBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.MsgBtn.Location = new System.Drawing.Point(0, 190);
             this.MsgBtn.Name = "MsgBtn";
-            this.MsgBtn.Size = new System.Drawing.Size(248, 28);
+            this.MsgBtn.Size = new System.Drawing.Size(186, 23);
             this.MsgBtn.TabIndex = 5;
             this.MsgBtn.Text = "Beskeder";
             this.MsgBtn.UseVisualStyleBackColor = true;
@@ -124,10 +121,9 @@
             this.AssBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AssBtn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AssBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.AssBtn.Location = new System.Drawing.Point(0, 205);
-            this.AssBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AssBtn.Location = new System.Drawing.Point(0, 167);
             this.AssBtn.Name = "AssBtn";
-            this.AssBtn.Size = new System.Drawing.Size(248, 28);
+            this.AssBtn.Size = new System.Drawing.Size(186, 23);
             this.AssBtn.TabIndex = 4;
             this.AssBtn.Text = "Opgaver";
             this.AssBtn.UseVisualStyleBackColor = true;
@@ -140,10 +136,9 @@
             this.LogoutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogoutBtn.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogoutBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.LogoutBtn.Location = new System.Drawing.Point(0, 706);
-            this.LogoutBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.LogoutBtn.Location = new System.Drawing.Point(0, 573);
             this.LogoutBtn.Name = "LogoutBtn";
-            this.LogoutBtn.Size = new System.Drawing.Size(248, 28);
+            this.LogoutBtn.Size = new System.Drawing.Size(186, 23);
             this.LogoutBtn.TabIndex = 2;
             this.LogoutBtn.Text = "Log ud";
             this.LogoutBtn.UseVisualStyleBackColor = true;
@@ -156,10 +151,9 @@
             this.BtnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAbout.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.BtnAbout.Location = new System.Drawing.Point(0, 734);
-            this.BtnAbout.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnAbout.Location = new System.Drawing.Point(0, 596);
             this.BtnAbout.Name = "BtnAbout";
-            this.BtnAbout.Size = new System.Drawing.Size(248, 28);
+            this.BtnAbout.Size = new System.Drawing.Size(186, 23);
             this.BtnAbout.TabIndex = 3;
             this.BtnAbout.Text = "Info";
             this.BtnAbout.UseVisualStyleBackColor = true;
@@ -172,10 +166,9 @@
             this.BtnDash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDash.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDash.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.BtnDash.Location = new System.Drawing.Point(0, 177);
-            this.BtnDash.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnDash.Location = new System.Drawing.Point(0, 144);
             this.BtnDash.Name = "BtnDash";
-            this.BtnDash.Size = new System.Drawing.Size(248, 28);
+            this.BtnDash.Size = new System.Drawing.Size(186, 23);
             this.BtnDash.TabIndex = 2;
             this.BtnDash.Text = "Forside";
             this.BtnDash.UseVisualStyleBackColor = true;
@@ -187,9 +180,8 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(248, 177);
+            this.panel2.Size = new System.Drawing.Size(186, 144);
             this.panel2.TabIndex = 0;
             // 
             // panel1
@@ -198,9 +190,8 @@
             this.panel1.Controls.Add(this.CurrentUser);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 37);
+            this.panel1.Size = new System.Drawing.Size(186, 30);
             this.panel1.TabIndex = 6;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
@@ -210,10 +201,9 @@
             this.CurrentUser.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CurrentUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CurrentUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.CurrentUser.Location = new System.Drawing.Point(0, 20);
-            this.CurrentUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CurrentUser.Location = new System.Drawing.Point(0, 17);
             this.CurrentUser.Name = "CurrentUser";
-            this.CurrentUser.Size = new System.Drawing.Size(89, 17);
+            this.CurrentUser.Size = new System.Drawing.Size(71, 13);
             this.CurrentUser.TabIndex = 1;
             this.CurrentUser.Text = "NAME FIELD";
             this.CurrentUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,10 +211,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bachelor_desktop_app.Properties.Resources.Larsloekke;
-            this.pictureBox1.Location = new System.Drawing.Point(4, 36);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 29);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -234,10 +223,9 @@
             this.BtnExit.FlatAppearance.BorderSize = 0;
             this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExit.ForeColor = System.Drawing.Color.White;
-            this.BtnExit.Location = new System.Drawing.Point(1269, 2);
-            this.BtnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnExit.Location = new System.Drawing.Point(952, 2);
             this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(33, 31);
+            this.BtnExit.Size = new System.Drawing.Size(25, 25);
             this.BtnExit.TabIndex = 3;
             this.BtnExit.Text = "X";
             this.BtnExit.UseVisualStyleBackColor = true;
@@ -248,10 +236,9 @@
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblID.Location = new System.Drawing.Point(419, 8);
-            this.lblID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblID.Location = new System.Drawing.Point(314, 6);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(324, 25);
+            this.lblID.Size = new System.Drawing.Size(269, 20);
             this.lblID.TabIndex = 4;
             this.lblID.Text = "Use this to test if we can get user ID ";
             // 
@@ -261,33 +248,30 @@
             this.TopPanel.Controls.Add(this.BtnExit);
             this.TopPanel.Controls.Add(this.lblID);
             this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPanel.Location = new System.Drawing.Point(248, 0);
-            this.TopPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.TopPanel.Location = new System.Drawing.Point(186, 0);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(1303, 37);
+            this.TopPanel.Size = new System.Drawing.Size(977, 30);
             this.TopPanel.TabIndex = 5;
             this.TopPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // LoaderPnl
             // 
             this.LoaderPnl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.LoaderPnl.Location = new System.Drawing.Point(248, 36);
-            this.LoaderPnl.Margin = new System.Windows.Forms.Padding(4);
+            this.LoaderPnl.Location = new System.Drawing.Point(186, 29);
             this.LoaderPnl.Name = "LoaderPnl";
-            this.LoaderPnl.Size = new System.Drawing.Size(1303, 726);
+            this.LoaderPnl.Size = new System.Drawing.Size(977, 590);
             this.LoaderPnl.TabIndex = 7;
             // 
             // Index
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1551, 762);
+            this.ClientSize = new System.Drawing.Size(1163, 619);
             this.Controls.Add(this.LoaderPnl);
             this.Controls.Add(this.TopPanel);
             this.Controls.Add(this.pnlNav);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";

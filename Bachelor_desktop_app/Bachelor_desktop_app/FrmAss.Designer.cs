@@ -41,6 +41,7 @@
             this.BioBtn = new System.Windows.Forms.Button();
             this.GeoBtn = new System.Windows.Forms.Button();
             this.NatBtn = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.SuspendLayout();
             // 
             // AssLbl
@@ -48,9 +49,10 @@
             this.AssLbl.AutoSize = true;
             this.AssLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AssLbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.AssLbl.Location = new System.Drawing.Point(12, 9);
+            this.AssLbl.Location = new System.Drawing.Point(9, 7);
+            this.AssLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AssLbl.Name = "AssLbl";
-            this.AssLbl.Size = new System.Drawing.Size(106, 29);
+            this.AssLbl.Size = new System.Drawing.Size(83, 24);
             this.AssLbl.TabIndex = 0;
             this.AssLbl.Text = "Opgaver";
             // 
@@ -58,9 +60,10 @@
             // 
             this.MatBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MatBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.MatBtn.Location = new System.Drawing.Point(580, 150);
+            this.MatBtn.Location = new System.Drawing.Point(435, 122);
+            this.MatBtn.Margin = new System.Windows.Forms.Padding(2);
             this.MatBtn.Name = "MatBtn";
-            this.MatBtn.Size = new System.Drawing.Size(140, 60);
+            this.MatBtn.Size = new System.Drawing.Size(105, 49);
             this.MatBtn.TabIndex = 1;
             this.MatBtn.Text = "Matematik";
             this.MatBtn.UseVisualStyleBackColor = true;
@@ -68,10 +71,11 @@
             // 
             // PhysBtn
             // 
-            this.PhysBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhysBtn.Location = new System.Drawing.Point(860, 275);
+            this.PhysBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhysBtn.Location = new System.Drawing.Point(645, 223);
+            this.PhysBtn.Margin = new System.Windows.Forms.Padding(2);
             this.PhysBtn.Name = "PhysBtn";
-            this.PhysBtn.Size = new System.Drawing.Size(140, 60);
+            this.PhysBtn.Size = new System.Drawing.Size(105, 49);
             this.PhysBtn.TabIndex = 2;
             this.PhysBtn.Text = "Fysik/Kemi";
             this.PhysBtn.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@
             // DKBtn
             // 
             this.DKBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DKBtn.Location = new System.Drawing.Point(300, 150);
+            this.DKBtn.Location = new System.Drawing.Point(225, 122);
+            this.DKBtn.Margin = new System.Windows.Forms.Padding(2);
             this.DKBtn.Name = "DKBtn";
-            this.DKBtn.Size = new System.Drawing.Size(140, 60);
+            this.DKBtn.Size = new System.Drawing.Size(105, 49);
             this.DKBtn.TabIndex = 3;
             this.DKBtn.Text = "Dansk";
             this.DKBtn.UseVisualStyleBackColor = true;
@@ -91,99 +96,117 @@
             // EngBtn
             // 
             this.EngBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EngBtn.Location = new System.Drawing.Point(860, 150);
+            this.EngBtn.Location = new System.Drawing.Point(645, 122);
+            this.EngBtn.Margin = new System.Windows.Forms.Padding(2);
             this.EngBtn.Name = "EngBtn";
-            this.EngBtn.Size = new System.Drawing.Size(140, 60);
+            this.EngBtn.Size = new System.Drawing.Size(105, 49);
             this.EngBtn.TabIndex = 5;
             this.EngBtn.Text = "Engelsk";
             this.EngBtn.UseVisualStyleBackColor = true;
+            this.EngBtn.Click += new System.EventHandler(this.EngBtn_Click);
             // 
             // GerBtn
             // 
             this.GerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GerBtn.Location = new System.Drawing.Point(860, 525);
+            this.GerBtn.Location = new System.Drawing.Point(645, 427);
+            this.GerBtn.Margin = new System.Windows.Forms.Padding(2);
             this.GerBtn.Name = "GerBtn";
-            this.GerBtn.Size = new System.Drawing.Size(140, 60);
+            this.GerBtn.Size = new System.Drawing.Size(105, 49);
             this.GerBtn.TabIndex = 6;
             this.GerBtn.Text = "Tysk";
             this.GerBtn.UseVisualStyleBackColor = true;
+            this.GerBtn.Click += new System.EventHandler(this.GerBtn_Click);
             // 
             // FRBtn
             // 
             this.FRBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FRBtn.Location = new System.Drawing.Point(300, 525);
+            this.FRBtn.Location = new System.Drawing.Point(225, 427);
+            this.FRBtn.Margin = new System.Windows.Forms.Padding(2);
             this.FRBtn.Name = "FRBtn";
-            this.FRBtn.Size = new System.Drawing.Size(140, 60);
+            this.FRBtn.Size = new System.Drawing.Size(105, 49);
             this.FRBtn.TabIndex = 7;
             this.FRBtn.Text = "Fransk";
             this.FRBtn.UseVisualStyleBackColor = true;
+            this.FRBtn.Click += new System.EventHandler(this.FRBtn_Click);
             // 
             // HisBtn
             // 
             this.HisBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HisBtn.Location = new System.Drawing.Point(580, 275);
+            this.HisBtn.Location = new System.Drawing.Point(435, 223);
+            this.HisBtn.Margin = new System.Windows.Forms.Padding(2);
             this.HisBtn.Name = "HisBtn";
-            this.HisBtn.Size = new System.Drawing.Size(140, 60);
+            this.HisBtn.Size = new System.Drawing.Size(105, 49);
             this.HisBtn.TabIndex = 8;
             this.HisBtn.Text = "Historie";
             this.HisBtn.UseVisualStyleBackColor = true;
+            this.HisBtn.Click += new System.EventHandler(this.HisBtn_Click);
             // 
             // JesusBtn
             // 
             this.JesusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JesusBtn.Location = new System.Drawing.Point(300, 275);
+            this.JesusBtn.Location = new System.Drawing.Point(225, 223);
+            this.JesusBtn.Margin = new System.Windows.Forms.Padding(2);
             this.JesusBtn.Name = "JesusBtn";
-            this.JesusBtn.Size = new System.Drawing.Size(140, 60);
+            this.JesusBtn.Size = new System.Drawing.Size(105, 49);
             this.JesusBtn.TabIndex = 9;
             this.JesusBtn.Text = "Kristendom";
             this.JesusBtn.UseVisualStyleBackColor = true;
+            this.JesusBtn.Click += new System.EventHandler(this.JesusBtn_Click);
             // 
             // SamfBtn
             // 
-            this.SamfBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SamfBtn.Location = new System.Drawing.Point(860, 400);
+            this.SamfBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SamfBtn.Location = new System.Drawing.Point(645, 325);
+            this.SamfBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SamfBtn.Name = "SamfBtn";
-            this.SamfBtn.Size = new System.Drawing.Size(140, 60);
+            this.SamfBtn.Size = new System.Drawing.Size(105, 49);
             this.SamfBtn.TabIndex = 10;
             this.SamfBtn.Text = "Samfundsfag";
             this.SamfBtn.UseVisualStyleBackColor = true;
+            this.SamfBtn.Click += new System.EventHandler(this.SamfBtn_Click);
             // 
             // BioBtn
             // 
             this.BioBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BioBtn.Location = new System.Drawing.Point(300, 400);
+            this.BioBtn.Location = new System.Drawing.Point(225, 325);
+            this.BioBtn.Margin = new System.Windows.Forms.Padding(2);
             this.BioBtn.Name = "BioBtn";
-            this.BioBtn.Size = new System.Drawing.Size(140, 60);
+            this.BioBtn.Size = new System.Drawing.Size(105, 49);
             this.BioBtn.TabIndex = 11;
             this.BioBtn.Text = "Biologi";
             this.BioBtn.UseVisualStyleBackColor = true;
+            this.BioBtn.Click += new System.EventHandler(this.BioBtn_Click);
             // 
             // GeoBtn
             // 
             this.GeoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GeoBtn.Location = new System.Drawing.Point(580, 400);
+            this.GeoBtn.Location = new System.Drawing.Point(435, 325);
+            this.GeoBtn.Margin = new System.Windows.Forms.Padding(2);
             this.GeoBtn.Name = "GeoBtn";
-            this.GeoBtn.Size = new System.Drawing.Size(140, 60);
+            this.GeoBtn.Size = new System.Drawing.Size(105, 49);
             this.GeoBtn.TabIndex = 12;
             this.GeoBtn.Text = "Geografi";
             this.GeoBtn.UseVisualStyleBackColor = true;
+            this.GeoBtn.Click += new System.EventHandler(this.GeoBtn_Click);
             // 
             // NatBtn
             // 
             this.NatBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NatBtn.Location = new System.Drawing.Point(580, 525);
+            this.NatBtn.Location = new System.Drawing.Point(435, 427);
+            this.NatBtn.Margin = new System.Windows.Forms.Padding(2);
             this.NatBtn.Name = "NatBtn";
-            this.NatBtn.Size = new System.Drawing.Size(140, 60);
+            this.NatBtn.Size = new System.Drawing.Size(105, 49);
             this.NatBtn.TabIndex = 13;
             this.NatBtn.Text = "Natur/teknik";
             this.NatBtn.UseVisualStyleBackColor = true;
+            this.NatBtn.Click += new System.EventHandler(this.NatBtn_Click);
             // 
             // FrmAss
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1303, 726);
+            this.ClientSize = new System.Drawing.Size(977, 590);
             this.Controls.Add(this.NatBtn);
             this.Controls.Add(this.GeoBtn);
             this.Controls.Add(this.BioBtn);
@@ -198,6 +221,7 @@
             this.Controls.Add(this.MatBtn);
             this.Controls.Add(this.AssLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAss";
             this.Text = "AssForm";
             this.ResumeLayout(false);
@@ -220,5 +244,6 @@
         private System.Windows.Forms.Button BioBtn;
         private System.Windows.Forms.Button GeoBtn;
         private System.Windows.Forms.Button NatBtn;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
