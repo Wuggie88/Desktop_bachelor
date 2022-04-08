@@ -15,7 +15,7 @@ namespace Bachelor_desktop_app
     public partial class Index : Form
     {
         //SQL connection
-        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=logintest");
+        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=bcslogin");
 
         //used for the design of the window.
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]

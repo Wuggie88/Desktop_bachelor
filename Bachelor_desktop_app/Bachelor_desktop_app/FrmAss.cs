@@ -15,7 +15,7 @@ namespace Bachelor_desktop_app
     public partial class FrmAss : Form
     {
         //SQL connection
-        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=logintest");
+        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=bcslogin");
 
         public enum Classes { c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10 };
         public Classes myClass;

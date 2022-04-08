@@ -15,7 +15,7 @@ namespace Bachelor_desktop_app
 {
     public partial class Form1 : Form
     {
-        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=logintest");
+        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=bcslogin");
         int i;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]

@@ -33,33 +33,33 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.FnameBox = new System.Windows.Forms.TextBox();
+            this.LnameBox = new System.Windows.Forms.TextBox();
+            this.EmailBox = new System.Windows.Forms.TextBox();
             this.lblMail = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.GEmailBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.GEmail2Box = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.GEmail3Box = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.GEmail4Box = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.UserBox = new System.Windows.Forms.TextBox();
+            this.PWBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.lblTest = new System.Windows.Forms.Label();
+            this.ClassBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BtnExit
@@ -125,26 +125,26 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Last Name*";
             // 
-            // textBox1
+            // FnameBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
-            this.textBox1.TabIndex = 5;
+            this.FnameBox.Location = new System.Drawing.Point(77, 70);
+            this.FnameBox.Name = "FnameBox";
+            this.FnameBox.Size = new System.Drawing.Size(137, 20);
+            this.FnameBox.TabIndex = 5;
             // 
-            // textBox2
+            // LnameBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(77, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(137, 20);
-            this.textBox2.TabIndex = 6;
+            this.LnameBox.Location = new System.Drawing.Point(77, 124);
+            this.LnameBox.Name = "LnameBox";
+            this.LnameBox.Size = new System.Drawing.Size(137, 20);
+            this.LnameBox.TabIndex = 6;
             // 
-            // textBox3
+            // EmailBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(77, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(137, 20);
-            this.textBox3.TabIndex = 8;
+            this.EmailBox.Location = new System.Drawing.Point(77, 182);
+            this.EmailBox.Name = "EmailBox";
+            this.EmailBox.Size = new System.Drawing.Size(137, 20);
+            this.EmailBox.TabIndex = 8;
             // 
             // lblMail
             // 
@@ -168,12 +168,12 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Guardian E-mail*";
             // 
-            // textBox4
+            // GEmailBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(77, 236);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(137, 20);
-            this.textBox4.TabIndex = 8;
+            this.GEmailBox.Location = new System.Drawing.Point(77, 236);
+            this.GEmailBox.Name = "GEmailBox";
+            this.GEmailBox.Size = new System.Drawing.Size(137, 20);
+            this.GEmailBox.TabIndex = 8;
             // 
             // label3
             // 
@@ -186,12 +186,12 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Guardian E-mail";
             // 
-            // textBox5
+            // GEmail2Box
             // 
-            this.textBox5.Location = new System.Drawing.Point(77, 292);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(137, 20);
-            this.textBox5.TabIndex = 8;
+            this.GEmail2Box.Location = new System.Drawing.Point(77, 292);
+            this.GEmail2Box.Name = "GEmail2Box";
+            this.GEmail2Box.Size = new System.Drawing.Size(137, 20);
+            this.GEmail2Box.TabIndex = 8;
             // 
             // label4
             // 
@@ -204,12 +204,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Guardian E-mail";
             // 
-            // textBox6
+            // GEmail3Box
             // 
-            this.textBox6.Location = new System.Drawing.Point(77, 347);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(137, 20);
-            this.textBox6.TabIndex = 8;
+            this.GEmail3Box.Location = new System.Drawing.Point(77, 347);
+            this.GEmail3Box.Name = "GEmail3Box";
+            this.GEmail3Box.Size = new System.Drawing.Size(137, 20);
+            this.GEmail3Box.TabIndex = 8;
             // 
             // label5
             // 
@@ -222,12 +222,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Guardian E-mail";
             // 
-            // textBox7
+            // GEmail4Box
             // 
-            this.textBox7.Location = new System.Drawing.Point(77, 403);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(137, 20);
-            this.textBox7.TabIndex = 8;
+            this.GEmail4Box.Location = new System.Drawing.Point(77, 403);
+            this.GEmail4Box.Name = "GEmail4Box";
+            this.GEmail4Box.Size = new System.Drawing.Size(137, 20);
+            this.GEmail4Box.TabIndex = 8;
             // 
             // label6
             // 
@@ -251,19 +251,19 @@
             this.label7.TabIndex = 4;
             this.label7.Text = "Password*";
             // 
-            // textBox8
+            // UserBox
             // 
-            this.textBox8.Location = new System.Drawing.Point(265, 70);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(137, 20);
-            this.textBox8.TabIndex = 5;
+            this.UserBox.Location = new System.Drawing.Point(265, 70);
+            this.UserBox.Name = "UserBox";
+            this.UserBox.Size = new System.Drawing.Size(137, 20);
+            this.UserBox.TabIndex = 5;
             // 
-            // textBox9
+            // PWBox
             // 
-            this.textBox9.Location = new System.Drawing.Point(265, 124);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(137, 20);
-            this.textBox9.TabIndex = 6;
+            this.PWBox.Location = new System.Drawing.Point(265, 124);
+            this.PWBox.Name = "PWBox";
+            this.PWBox.Size = new System.Drawing.Size(137, 20);
+            this.PWBox.TabIndex = 6;
             // 
             // label8
             // 
@@ -316,16 +316,9 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.label12.Location = new System.Drawing.Point(262, 384);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(77, 16);
+            this.label12.Size = new System.Drawing.Size(47, 16);
             this.label12.TabIndex = 7;
-            this.label12.Text = "Serial code";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(265, 403);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(137, 20);
-            this.textBox14.TabIndex = 8;
+            this.label12.Text = "Class*";
             // 
             // comboBox1
             // 
@@ -384,38 +377,58 @@
             this.lblTest.TabIndex = 13;
             this.lblTest.Text = "Test space";
             // 
+            // ClassBox
+            // 
+            this.ClassBox.FormattingEnabled = true;
+            this.ClassBox.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.ClassBox.Location = new System.Drawing.Point(265, 403);
+            this.ClassBox.Name = "ClassBox";
+            this.ClassBox.Size = new System.Drawing.Size(137, 21);
+            this.ClassBox.TabIndex = 14;
+            // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(488, 522);
+            this.Controls.Add(this.ClassBox);
             this.Controls.Add(this.lblTest);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox14);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.GEmail4Box);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.GEmail2Box);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.GEmail3Box);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.GEmailBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.EmailBox);
+            this.Controls.Add(this.PWBox);
             this.Controls.Add(this.lblMail);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.UserBox);
+            this.Controls.Add(this.LnameBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.FnameBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblName);
@@ -439,32 +452,32 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox FnameBox;
+        private System.Windows.Forms.TextBox LnameBox;
+        private System.Windows.Forms.TextBox EmailBox;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox GEmailBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox GEmail2Box;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox GEmail3Box;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox GEmail4Box;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox UserBox;
+        private System.Windows.Forms.TextBox PWBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label lblTest;
+        private System.Windows.Forms.ComboBox ClassBox;
     }
 }

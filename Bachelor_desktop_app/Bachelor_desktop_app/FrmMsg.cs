@@ -14,7 +14,7 @@ namespace Bachelor_desktop_app
     public partial class FrmMsg : Form
     {
         //SQL connection
-        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=logintest");
+        MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=bcslogin");
 
         public FrmMsg(String CU)
         {

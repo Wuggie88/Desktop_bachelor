@@ -36,22 +36,20 @@
             this.abtLbl.AutoSize = true;
             this.abtLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.abtLbl.ForeColor = System.Drawing.SystemColors.Control;
-            this.abtLbl.Location = new System.Drawing.Point(353, 233);
-            this.abtLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.abtLbl.Location = new System.Drawing.Point(265, 189);
             this.abtLbl.Name = "abtLbl";
-            this.abtLbl.Size = new System.Drawing.Size(85, 31);
+            this.abtLbl.Size = new System.Drawing.Size(68, 25);
             this.abtLbl.TabIndex = 0;
             this.abtLbl.Text = "About";
             // 
             // FrmAbt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(1303, 726);
+            this.ClientSize = new System.Drawing.Size(977, 590);
             this.Controls.Add(this.abtLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmAbt";
             this.Text = "FrmAbt";
             this.ResumeLayout(false);
