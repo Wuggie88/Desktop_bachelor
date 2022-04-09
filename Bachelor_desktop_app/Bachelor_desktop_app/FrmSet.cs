@@ -19,7 +19,7 @@ namespace Bachelor_desktop_app
         public FrmSet(string CU)
         {
             InitializeComponent();
-            //opens connection to the SQL, finds the data and use the data reader to save the data of the current user.
+            //opens connection to the SQL, find the user from the user that's logged in and saves it, and closes the SQL connection.
             con.Open();
             MySqlCommand com = con.CreateCommand();
             com.CommandText = "SELECT * FROM login WHERE User = '" + CU + "'";
