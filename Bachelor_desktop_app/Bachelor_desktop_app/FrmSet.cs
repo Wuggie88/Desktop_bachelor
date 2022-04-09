@@ -47,27 +47,34 @@ namespace Bachelor_desktop_app
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            //Push to the database with the current data in the form.
-            con.Open();
-            MySqlCommand com = con.CreateCommand();
-            com.CommandText = "INSERT INTO login (User, Password, FirstName, LastName, Email, GEmail, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
-                "VALUES('" + UserBox.Text + "'," +
-                "'" + PWBox.Text + "'," +
-                "'" + FnameBox.Text + "'," +
-                "'" + LnameBox.Text + "'," +
-                "'" + EmailBox.Text + "'," +
-                "'" + GEmailBox.Text + "'," +
-                "'" + GEmail2Box.Text + "'," +
-                "'" + GEmail3Box.Text + "'," +
-                "'" + GEmail4Box.Text + "'," +
-                "'" + comboBox1.Text + "'," +
-                "'" + comboBox2.Text + "'," +
-                "'" + comboBox3.Text + "'," +
-                "'" + comboBox4.Text + "'," +
-                "'" + ClassBox.Text + "')";
-            com.ExecuteNonQuery();
+            if (PWBox.Text.Length <= 3)
+            {
+                //make a label here for when password is not long enough.
+            }
+            else
+            {
+                //Push to the database with the current data in the form.
+                con.Open();
+                MySqlCommand com = con.CreateCommand();
+                com.CommandText = "INSERT INTO login (User, Password, FirstName, LastName, Email, GEmail, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
+                    "VALUES('" + UserBox.Text + "'," +
+                    "'" + PWBox.Text + "'," +
+                    "'" + FnameBox.Text + "'," +
+                    "'" + LnameBox.Text + "'," +
+                    "'" + EmailBox.Text + "'," +
+                    "'" + GEmailBox.Text + "'," +
+                    "'" + GEmail2Box.Text + "'," +
+                    "'" + GEmail3Box.Text + "'," +
+                    "'" + GEmail4Box.Text + "'," +
+                    "'" + comboBox1.Text + "'," +
+                    "'" + comboBox2.Text + "'," +
+                    "'" + comboBox3.Text + "'," +
+                    "'" + comboBox4.Text + "'," +
+                    "'" + ClassBox.Text + "')";
+                com.ExecuteNonQuery();
 
-            con.Close();
+                con.Close();
+            }
         }
     }
 }

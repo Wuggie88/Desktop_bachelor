@@ -64,31 +64,40 @@ namespace Bachelor_desktop_app
         //controls what happens when clicking the accept button
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            //Opens connection to the database, then sends it a command to insert what is filled out in the form, then closes the connection and goes back to the login screen.
-            con.Open();
-            MySqlCommand com = con.CreateCommand();
-            com.CommandText = "INSERT INTO login (User, Password, FirstName, LastName, Email, GEmail, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
-                "VALUES('" + UserBox.Text + "'," +
-                "'" + PWBox.Text + "'," +
-                "'" + FnameBox.Text + "'," +
-                "'" + LnameBox.Text + "'," +
-                "'" + EmailBox.Text + "'," +
-                "'" + GEmailBox.Text + "'," +
-                "'" + GEmail2Box.Text + "'," +
-                "'" + GEmail3Box.Text + "'," +
-                "'" + GEmail4Box.Text + "'," +
-                "'" + comboBox1.Text + "'," +
-                "'" + comboBox2.Text + "'," +
-                "'" + comboBox3.Text + "'," +
-                "'" + comboBox4.Text + "'," +
-                "'" + ClassBox.Text + "')";
-            com.ExecuteNonQuery();
 
-            con.Close();
+            if (PWBox.Text.Length <= 3)
+            {
+                //make a label here for when password is not long enough.
+            }
+            else
+            {
+                //Opens connection to the database, then sends it a command to insert what is filled out in the form, then closes the connection and goes back to the login screen.
+                con.Open();
+                MySqlCommand com = con.CreateCommand();
+                com.CommandText = "INSERT INTO login (User, Password, FirstName, LastName, Email, GEmail, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
+                    "VALUES('" + UserBox.Text + "'," +
+                    "'" + PWBox.Text + "'," +
+                    "'" + FnameBox.Text + "'," +
+                    "'" + LnameBox.Text + "'," +
+                    "'" + EmailBox.Text + "'," +
+                    "'" + GEmailBox.Text + "'," +
+                    "'" + GEmail2Box.Text + "'," +
+                    "'" + GEmail3Box.Text + "'," +
+                    "'" + GEmail4Box.Text + "'," +
+                    "'" + comboBox1.Text + "'," +
+                    "'" + comboBox2.Text + "'," +
+                    "'" + comboBox3.Text + "'," +
+                    "'" + comboBox4.Text + "'," +
+                    "'" + ClassBox.Text + "')";
+                com.ExecuteNonQuery();
 
-            this.Hide();
-            Form1 fm = new Form1();
-            fm.Show();
+                con.Close();
+
+                this.Hide();
+                Form1 fm = new Form1();
+                fm.Show();
+            }
+            
         }
         //controls what happens when clicking the Cancel button
         private void btnCancel_Click(object sender, EventArgs e)
