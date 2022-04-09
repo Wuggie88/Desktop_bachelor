@@ -16,6 +16,7 @@ namespace Bachelor_desktop_app
         //SQL connection
         MySqlConnection con = new MySqlConnection(@"server=localhost;userid=root;password='';database=bcslogin");
         int i;
+        string User;
 
         public FrmSet(string CU)
         {
@@ -27,6 +28,7 @@ namespace Bachelor_desktop_app
             MySqlDataReader reader = com.ExecuteReader();
             reader.Read();
 
+            User = CU.ToString();
             //fill out the form with the current data.
             UserBox.Text = reader["User"].ToString();
             FnameBox.Text = reader["FirstName"].ToString();
@@ -77,7 +79,9 @@ namespace Bachelor_desktop_app
                 //Push to the database with the current data in the form.
                 MySqlCommand com = con.CreateCommand();
                 con.Open();
-                com.CommandText = "INSERT INTO login (Password, FirstName, LastName, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
+
+                //This is where the error is, It's because you don't update like this.. will have to rewrite this at some point to the whole "Set" thing, for more info check this: https://www.w3schools.com/sql/sql_update.asp
+                com.CommandText = "UPDATE login (Password, FirstName, LastName, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
                     "VALUES('" + PWBox.Text + "'," +
                     "'" + FnameBox.Text + "'," +
                     "'" + LnameBox.Text + "'," +
@@ -88,7 +92,8 @@ namespace Bachelor_desktop_app
                     "'" + comboBox2.Text + "'," +
                     "'" + comboBox3.Text + "'," +
                     "'" + comboBox4.Text + "'," +
-                    "'" + ClassBox.Text + "')";
+                    "'" + ClassBox.Text + "')" +
+                    "WHERE User = '" + User + "'";
                 com.ExecuteNonQuery();
                 con.Close();
             }
