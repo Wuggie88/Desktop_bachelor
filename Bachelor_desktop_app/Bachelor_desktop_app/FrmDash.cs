@@ -26,6 +26,8 @@ namespace Bachelor_desktop_app
             MySqlDataReader reader = com.ExecuteReader();
             reader.Read();
             con.Close();
+
+            DashLbl.Text = "Velkommen: " + reader["FirstName"] + reader["LastName"];
         }
     }
 }

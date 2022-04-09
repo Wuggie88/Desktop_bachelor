@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.DashLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // DashLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(323, 230);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashboard!";
+            this.DashLbl.AutoSize = true;
+            this.DashLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DashLbl.ForeColor = System.Drawing.SystemColors.Control;
+            this.DashLbl.Location = new System.Drawing.Point(13, 9);
+            this.DashLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DashLbl.Name = "DashLbl";
+            this.DashLbl.Size = new System.Drawing.Size(155, 31);
+            this.DashLbl.TabIndex = 0;
+            this.DashLbl.Text = "Dashboard!";
             // 
             // FrmDash
             // 
@@ -49,7 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1303, 726);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.DashLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmDash";
@@ -61,6 +61,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label DashLbl;
     }
 }
