@@ -50,8 +50,6 @@ namespace Bachelor_desktop_app
             User = CU;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
 
-
-            //THIS IS WHERE WE SHOULD LOOK FOR MAKING AN ARRAY WITH ALL THE INFO ABOUT THE USER!
             //opens connection to the SQL, finds the data and use the data reader to save the data of the current user.
             con.Open();
             MySqlCommand com = con.CreateCommand();
@@ -66,7 +64,7 @@ namespace Bachelor_desktop_app
 
             // form loader loading the initial form here.
             this.LoaderPnl.Controls.Clear();
-            FrmDash frmDash_Vrb = new FrmDash() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            FrmDash frmDash_Vrb = new FrmDash(User) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmDash_Vrb.FormBorderStyle = FormBorderStyle.None;
             this.LoaderPnl.Controls.Add(frmDash_Vrb);
             frmDash_Vrb.Show();
@@ -82,14 +80,11 @@ namespace Bachelor_desktop_app
             }
         }
 
-
-
-
         private void BtnDash_Click(object sender, EventArgs e)
         {
             //this part is what changes the formloader to what form it should be
             this.LoaderPnl.Controls.Clear();
-            FrmDash frmDash_Vrb = new FrmDash() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            FrmDash frmDash_Vrb = new FrmDash(User) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmDash_Vrb.FormBorderStyle = FormBorderStyle.None;
             this.LoaderPnl.Controls.Add(frmDash_Vrb);
             frmDash_Vrb.Show();
