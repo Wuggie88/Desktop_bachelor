@@ -161,7 +161,7 @@ namespace Bachelor_desktop_app
         {
             // formloader code
             this.LoaderPnl.Controls.Clear();
-            FrmSet frmSet_Vrb = new FrmSet() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            FrmSet frmSet_Vrb = new FrmSet(User) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             frmSet_Vrb.FormBorderStyle = FormBorderStyle.None;
             this.LoaderPnl.Controls.Add(frmSet_Vrb);
             frmSet_Vrb.Show();
