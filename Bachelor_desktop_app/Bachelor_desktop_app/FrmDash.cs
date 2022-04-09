@@ -25,9 +25,12 @@ namespace Bachelor_desktop_app
             com.CommandText = "SELECT * FROM login WHERE User = '" + CU + "'";
             MySqlDataReader reader = com.ExecuteReader();
             reader.Read();
-            con.Close();
+            
 
-            DashLbl.Text = "Velkommen: " + reader["FirstName"] + reader["LastName"];
+            DashLbl.Text = "Velkommen: " + reader["FirstName"] + " " + reader["LastName"];
+
+
+            con.Close();
         }
     }
 }
