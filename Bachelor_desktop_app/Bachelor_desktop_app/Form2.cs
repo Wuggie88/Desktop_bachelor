@@ -61,11 +61,6 @@ namespace Bachelor_desktop_app
 
             lblID.Text = "The id of the user is: " + reader["Id"];
 
-            /*while (reader.Read())
-            {
-                //writes the current ID to the ID label.
-                lblID.Text = "The id of this user is: " + reader["Id"];
-            }*/
             //closes the SQL connection.
             con.Close();
 
@@ -112,6 +107,7 @@ namespace Bachelor_desktop_app
 
         private void BtnExit_Click(object sender, EventArgs e)
         {
+            // closes the application when the cross in the top right is pressed.
             Application.Exit();
         }
 
@@ -132,6 +128,7 @@ namespace Bachelor_desktop_app
 
         private void LogoutBtn_Click(object sender, EventArgs e)
         {
+            //logs out and returns the user to the login screen.
             this.Hide();
             Form1 logoutForm = new Form1();
             logoutForm.Show();
