@@ -28,19 +28,19 @@ namespace Bachelor_desktop_app
             con.Close();
 
             //fill out the form with the current data.
-            UserBox.Text = "" + reader["User"];
-            FnameBox.Text = "" + reader["FirstName"];
-            LnameBox.Text = "" + reader["LastName"];
-            EmailBox.Text = "" + reader["Email"];
-            GEmailBox.Text = "" + reader["GEmail"];
-            GEmail2Box.Text = "" + reader["GEmail2"];
-            GEmail3Box.Text = "" + reader["GEmail3"];
-            GEmail4Box.Text = "" + reader["GEmail4"];
-            comboBox1.Text = "" + reader["interest1"];
-            comboBox2.Text = "" + reader["interest2"];
-            comboBox3.Text = "" + reader["interest3"];
-            comboBox4.Text = "" + reader["interest4"];
-            ClassBox.Text = "" + reader["Klasse"];
+            UserBox.Text = reader["User"].ToString();
+            FnameBox.Text = reader["FirstName"].ToString();
+            LnameBox.Text = reader["LastName"].ToString();
+            EmailBox.Text = reader["Email"].ToString();
+            GEmailBox.Text = reader["GEmail"].ToString();
+            GEmail2Box.Text = reader["GEmail2"].ToString();
+            GEmail3Box.Text = reader["GEmail3"].ToString();
+            GEmail4Box.Text = reader["GEmail4"].ToString();
+            comboBox1.Text = reader["interest1"].ToString();
+            comboBox2.Text = reader["interest2"].ToString();
+            comboBox3.Text = reader["interest3"].ToString();
+            comboBox4.Text = reader["interest4"].ToString();
+            ClassBox.Text = reader["Klasse"].ToString();
             
 
         }
