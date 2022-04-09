@@ -67,7 +67,8 @@ namespace Bachelor_desktop_app
 
             if (PWBox.Text.Length <= 3)
             {
-                //make a label here for when password is not long enough.
+                //sets label when password is not long enough.
+                PWLLbl.Text = "Password needs to be at least 4 characters";
             }
             else
             {
@@ -107,7 +108,7 @@ namespace Bachelor_desktop_app
             Form1 fm = new Form1();
             fm.Show();
             */
-            lblTest.Text = comboBox1.Text;
+            PWLLbl.Text = comboBox1.Text;
         }
     }
 }

@@ -58,6 +58,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.PWLLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SetLbl
@@ -393,12 +394,21 @@
             this.lblName.TabIndex = 15;
             this.lblName.Text = "First Name*";
             // 
+            // PWLLbl
+            // 
+            this.PWLLbl.AutoSize = true;
+            this.PWLLbl.Location = new System.Drawing.Point(415, 606);
+            this.PWLLbl.Name = "PWLLbl";
+            this.PWLLbl.Size = new System.Drawing.Size(0, 29);
+            this.PWLLbl.TabIndex = 43;
+            // 
             // FrmSet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1303, 726);
+            this.Controls.Add(this.PWLLbl);
             this.Controls.Add(this.ClassBox);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
@@ -472,5 +482,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label PWLLbl;
     }
 }

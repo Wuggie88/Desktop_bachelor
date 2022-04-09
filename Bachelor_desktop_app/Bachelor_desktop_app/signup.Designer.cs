@@ -58,7 +58,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.lblTest = new System.Windows.Forms.Label();
+            this.PWLLbl = new System.Windows.Forms.Label();
             this.ClassBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -398,16 +398,15 @@
             this.comboBox4.Size = new System.Drawing.Size(181, 24);
             this.comboBox4.TabIndex = 12;
             // 
-            // lblTest
+            // PWLLbl
             // 
-            this.lblTest.AutoSize = true;
-            this.lblTest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblTest.Location = new System.Drawing.Point(276, 546);
-            this.lblTest.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTest.Name = "lblTest";
-            this.lblTest.Size = new System.Drawing.Size(78, 17);
-            this.lblTest.TabIndex = 13;
-            this.lblTest.Text = "Test space";
+            this.PWLLbl.AutoSize = true;
+            this.PWLLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.PWLLbl.Location = new System.Drawing.Point(167, 545);
+            this.PWLLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PWLLbl.Name = "PWLLbl";
+            this.PWLLbl.Size = new System.Drawing.Size(0, 17);
+            this.PWLLbl.TabIndex = 13;
             // 
             // ClassBox
             // 
@@ -437,7 +436,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(651, 642);
             this.Controls.Add(this.ClassBox);
-            this.Controls.Add(this.lblTest);
+            this.Controls.Add(this.PWLLbl);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
@@ -511,7 +510,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label lblTest;
+        private System.Windows.Forms.Label PWLLbl;
         private System.Windows.Forms.ComboBox ClassBox;
     }
 }
