@@ -80,8 +80,19 @@ namespace Bachelor_desktop_app
                 MySqlCommand com = con.CreateCommand();
                 con.Open();
 
-                //No clue what the heck is wrong here. It gets the right user and user is a string. (the one line code works) 
-                com.CommandText = "UPDATE login SET interest2 = '" + comboBox2.Text + "' WHERE User = '" + User + "'"; /*+
+                // Updates the SQL database to what is in the form currently, as long as the password is long enough, this would need an "old password check for some security"
+                com.CommandText = "UPDATE login SET interest2 = '" + comboBox2.Text + "' , " +
+                    "interest3 = '" + comboBox3.Text +"', " +
+                    "interest1 = '" + comboBox1.Text +"', " +
+                    "interest4 = '" + comboBox4.Text +"', " +
+                    "FirstName = '" + FnameBox.Text + "', " +
+                    "LastName = '" + LnameBox.Text + "', " +
+                    "GEmail2 = '" + GEmail2Box.Text + "', " +
+                    "GEmail3 = '" + GEmail3Box.Text + "', " +
+                    "GEmail4 = '" + GEmail4Box.Text + "', " +
+                    "Password = '" + PWBox.Text + "', " +
+                    "Klasse = '" + ClassBox.Text + "'" +
+                    "WHERE User = '" + User + "'"; /*+
                     "SET interest2 = '" + comboBox2.Text + "'" +
                     "WHERE User = '" + User +"'";
                     */
