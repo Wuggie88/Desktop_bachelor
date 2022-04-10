@@ -80,22 +80,15 @@ namespace Bachelor_desktop_app
                 MySqlCommand com = con.CreateCommand();
                 con.Open();
 
-                //This is where the error is, It's because you don't update like this.. will have to rewrite this at some point to the whole "Set" thing, for more info check this: https://www.w3schools.com/sql/sql_update.asp
-                com.CommandText = "UPDATE login (Password, FirstName, LastName, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
-                    "VALUES('" + PWBox.Text + "'," +
-                    "'" + FnameBox.Text + "'," +
-                    "'" + LnameBox.Text + "'," +
-                    "'" + GEmail2Box.Text + "'," +
-                    "'" + GEmail3Box.Text + "'," +
-                    "'" + GEmail4Box.Text + "'," +
-                    "'" + comboBox1.Text + "'," +
-                    "'" + comboBox2.Text + "'," +
-                    "'" + comboBox3.Text + "'," +
-                    "'" + comboBox4.Text + "'," +
-                    "'" + ClassBox.Text + "')" +
-                    "WHERE User = '" + User + "'";
+                //No clue what the heck is wrong here. It gets the right user and user is a string. (the one line code works) 
+                com.CommandText = "UPDATE login SET interest2 = '" + comboBox2.Text + "' WHERE User = '" + User + "'"; /*+
+                    "SET interest2 = '" + comboBox2.Text + "'" +
+                    "WHERE User = '" + User +"'";
+                    */
                 com.ExecuteNonQuery();
                 con.Close();
+
+                PWLLbl.Text = "Brugeren er opdateret.";
             }
         }
     }
