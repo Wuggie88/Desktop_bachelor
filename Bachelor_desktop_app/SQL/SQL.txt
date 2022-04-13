@@ -1,0 +1,29 @@
+CREATE DATABASE BCsLogin;
+
+CREATE TABLE login(
+	Id int(10) AUTO_INCREMENT NOT NULL UNIQUE,
+	User varchar(30) NOT NULL UNIQUE,
+	Password varchar(25) NOT NULL,
+    FirstName varchar(20) NOT NULL,
+    LastName varchar(25) NOT NULL,
+    Email varchar(50) NOT NULL UNIQUE,
+    GEmail varchar(50) NOT NULL,
+    GEmail2 varchar(50),
+    GEmail3 varchar(50),
+    GEmail4 varchar(50),
+    interest1 varchar(30) NOT NULL,
+    interest2 varchar(30),
+    interest3 varchar(30),
+    interest4 varchar(30),
+    Klasse int(2) NOT NULL,
+	PRIMARY KEY (Id));
+
+INSERT INTO login(User, Password, FirstName, LastName, Email, GEmail, interest1, Klasse)
+VALUES("Wuggie",
+      "test",
+      "Kasper",
+      "Wogelius",
+      "Wuggie88@yahoo.co.uk",
+      "Lene@Wogelius.dk",
+      "Cars",
+      8);
