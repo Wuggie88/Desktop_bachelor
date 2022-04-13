@@ -20,13 +20,15 @@ namespace Bachelor_desktop_app
         public FrmDash(string CU)
         {
             InitializeComponent();
+
+            //gets the current user from the database.
             con.Open();
             MySqlCommand com = con.CreateCommand();
             com.CommandText = "SELECT * FROM login WHERE User = '" + CU + "'";
             MySqlDataReader reader = com.ExecuteReader();
             reader.Read();
             
-
+            //prints a welcome message to the user with their name.
             DashLbl.Text = "Velkommen: " + reader["FirstName"] + " " + reader["LastName"];
 
 

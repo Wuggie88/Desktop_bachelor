@@ -36,6 +36,7 @@ namespace Bachelor_desktop_app
 
         public void CheckClass(object Klasse)
         {
+            //Checks on the Class that the user is in, then hides all the buttons that they do not need and sets the enum to the correct enum
             switch (Klasse)
             {
                 case 0:
@@ -138,6 +139,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the math button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void MatBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -180,7 +182,7 @@ namespace Bachelor_desktop_app
                     break;
             }
         }
-
+        //When clicking on the physics button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void PhysBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -204,6 +206,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the Danish button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void DKBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -247,6 +250,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the English button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void EngBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -287,6 +291,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the Religion button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void JesusBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -327,6 +332,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the history button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void HisBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -361,6 +367,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the Biology button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void BioBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -383,6 +390,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the Geography button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void GeoBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -405,6 +413,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the Social studies button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void SamfBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -424,6 +433,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the French button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void FRBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -452,6 +462,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the German button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void GerBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)
@@ -480,6 +491,7 @@ namespace Bachelor_desktop_app
             }
         }
 
+        //When clicking on the Nature technology button, checks the current enum for the class of the user, and directs them to the correct form (atm it just changes the label)
         private void NatBtn_Click(object sender, EventArgs e)
         {
             switch (myClass)

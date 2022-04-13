@@ -40,14 +40,18 @@ namespace Bachelor_desktop_app
         //makes a localDate variable with the current date and time.
         DateTime localDate = DateTime.Now;
 
+        //makes a string that holds the current user.
         public string User;
 
+        //the parameter put in here is the current user that it gets from the database, so it can be parsed into finding all the info of the user.
         public Index(string CU)
         {
             InitializeComponent();
-            //sets the current user label to the CU from form 1.
+            //sets the current user label to the CU from form 1. and sets the User string to the currenet user.
             CurrentUser.Text = CU;
             User = CU;
+
+            //Makes the corners of the window rounded.
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
 
             //opens connection to the SQL, finds the data and use the data reader to save the data of the current user.
@@ -106,6 +110,7 @@ namespace Bachelor_desktop_app
             Application.Exit();
         }
 
+        //we can use this if we want anything else to happen when this form loads.
         private void Index_Load(object sender, EventArgs e)
         {
 

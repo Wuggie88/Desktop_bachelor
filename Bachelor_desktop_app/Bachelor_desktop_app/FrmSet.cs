@@ -92,10 +92,7 @@ namespace Bachelor_desktop_app
                     "GEmail4 = '" + GEmail4Box.Text + "', " +
                     "Password = '" + PWBox.Text + "', " +
                     "Klasse = '" + ClassBox.Text + "'" +
-                    "WHERE User = '" + User + "'"; /*+
-                    "SET interest2 = '" + comboBox2.Text + "'" +
-                    "WHERE User = '" + User +"'";
-                    */
+                    "WHERE User = '" + User + "'"; 
                 com.ExecuteNonQuery();
                 con.Close();
 
