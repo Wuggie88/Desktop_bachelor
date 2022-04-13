@@ -27,7 +27,6 @@ namespace Bachelor_desktop_app
             MySqlDataReader reader = com.ExecuteReader();
 
             reader.Read();
-            MsgLbl.Text = "this is the user password: " + reader["Password"];
         }
     }
 }

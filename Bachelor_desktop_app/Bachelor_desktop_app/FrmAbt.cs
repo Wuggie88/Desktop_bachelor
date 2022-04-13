@@ -16,16 +16,6 @@ namespace Bachelor_desktop_app
         public FrmAbt()
         {
             InitializeComponent();
-            Process[] processes = Process.GetProcessesByName("Discord");
-
-            if (processes.Length == 0)
-            {
-                abtLbl.Text = "Discord isn't running";
-            }
-            else
-            {
-                abtLbl.Text = "Discord is running";
-            }
         }
     }
 }
