@@ -211,9 +211,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bachelor_desktop_app.Properties.Resources.IBL10;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 43);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(163, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
