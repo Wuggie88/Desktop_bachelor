@@ -103,12 +103,11 @@ namespace Bachelor_desktop_app
         //controls what happens when clicking the Cancel button
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            /*
+            
             this.Hide();
             Form1 fm = new Form1();
             fm.Show();
-            */
-            PWLLbl.Text = comboBox1.Text;
+            
         }
     }
 }
