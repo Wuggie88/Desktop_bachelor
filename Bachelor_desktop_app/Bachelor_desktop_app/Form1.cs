@@ -64,7 +64,8 @@ namespace Bachelor_desktop_app
             //i will remain 0 if no login fits with entered details, else it will be over 0.
             i = Convert.ToInt32(dt.Rows.Count.ToString());
 
-            //checks if i is 0, if it is we know no user has been found with the details and login fails, else it changes form and parse the user used to login with.
+            //checks if i is 0, if it is we know no user has been found with the details 
+            //and login fails, else it changes form and parse the user used to login with.
             if (i == 0)
             {
                 lblWrong.Text = "invalid username or password";
@@ -72,6 +73,7 @@ namespace Bachelor_desktop_app
             else
             {
                 this.Hide();
+                // Sends a string to the new window that pops up, letting it use the info from the database
                 Index fm = new Index(txtUser.Text);
                 fm.Show();
             }

@@ -61,21 +61,22 @@ namespace Bachelor_desktop_app
         {
             Application.Exit();
         }
-        //controls what happens when clicking the accept button
+        // Function that's called when the "Accept" button is pressed.
         private void btnAccept_Click(object sender, EventArgs e)
         {
 
-            if (PWBox.Text.Length <= 3)
-            {
+            if (PWBox.Text.Length <= 3){
                 //sets label when password is not long enough.
                 PWLLbl.Text = "Password needs to be at least 4 characters";
-            }
-            else
-            {
-                //Opens connection to the database, then sends it a command to insert what is filled out in the form, then closes the connection and goes back to the login screen.
+            } else {
+                //Opens connection to the database, 
+                //then sends it a command to insert what is filled out in the form, 
+                //then closes the connection and goes back to the login screen.
                 con.Open();
                 MySqlCommand com = con.CreateCommand();
-                com.CommandText = "INSERT INTO login (User, Password, FirstName, LastName, Email, GEmail, GEmail2, GEmail3, GEmail4, interest1, interest2, interest3, interest4, Klasse)" +
+                com.CommandText = "INSERT INTO login (User, Password, FirstName, " +
+                    "LastName, Email, GEmail, GEmail2, GEmail3, GEmail4, interest1," +
+                    " interest2, interest3, interest4, Klasse)" +
                     "VALUES('" + UserBox.Text + "'," +
                     "'" + PWBox.Text + "'," +
                     "'" + FnameBox.Text + "'," +
@@ -100,7 +101,7 @@ namespace Bachelor_desktop_app
             }
             
         }
-        //controls what happens when clicking the Cancel button
+        // Functions that is called when cancel button is pressed.
         private void btnCancel_Click(object sender, EventArgs e)
         {
             
